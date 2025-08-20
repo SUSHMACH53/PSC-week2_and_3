@@ -21,7 +21,7 @@ class WebCrawler:
             for link in soup.find_all('a'):
                 href = link.get('href')
                 if href:
-                    # fixed logic: check if href is absolute or relative
+                    # fixed logic 1: check if href is absolute or relative
                     if not urlparse(href).netloc:  # relative link
                         href = urljoin(base_url or url, href)
                     if href.startswith(base_url or url):
