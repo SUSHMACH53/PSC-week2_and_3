@@ -48,7 +48,7 @@ class WebCrawler:
 def main():
     crawler = WebCrawler()
     start_url = "https://example.com"
-    crawler.crawl(start_url)  # fixed: typo `craw` → `crawl`
+    crawler.crawl(start_url)  # fixed 5: typo `craw` → `crawl`
 
     keyword = "test"
     results = crawler.search(keyword)
