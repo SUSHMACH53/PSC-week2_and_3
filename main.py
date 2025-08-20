@@ -26,7 +26,7 @@ class WebCrawler:
                         href = urljoin(base_url or url, href)
                     if href.startswith(base_url or url):
                         self.crawl(href, base_url=base_url or url)  
-                        # fixed: only crawl inside same domain
+                        # fixed 2: only crawl inside same domain
         except Exception as e:
             print(f"Error crawling {url}: {e}")
 
