@@ -33,7 +33,7 @@ class WebCrawler:
     def search(self, keyword):
         results = []
         for url, text in self.index.items():
-            if keyword.lower() in text.lower():  # fixed: was "not in"
+            if keyword.lower() in text.lower():  # fixed 3: was "not in"
                 results.append(url)
         return results
 
