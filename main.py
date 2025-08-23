@@ -93,7 +93,7 @@ class WebCrawlerTests(unittest.TestCase):
         crawler.index["page2"] = "No key here"
 
         results = crawler.search("keyword")
-        self.assertEqual(results, ["page1"])  # fixed: should return page1
+        self.assertEqual(results, ["page1"])  # fixed 1: should return page1
 
     @patch('sys.stdout')
     def test_print_results(self, mock_stdout):
