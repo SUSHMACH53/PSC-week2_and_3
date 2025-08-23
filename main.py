@@ -102,5 +102,5 @@ class WebCrawlerTests(unittest.TestCase):
         # check output written (simplified)
 
 if __name__ == "__main__":
-    unittest.main(exit=False)  # fixed: allow running both tests and main()
+    unittest.main(exit=False)  # fixed 2: allow running both tests and main()
     main()
